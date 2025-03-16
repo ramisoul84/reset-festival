@@ -29,6 +29,11 @@ import AOS from 'aos';
 })
 export class HomePageComponent implements AfterViewInit {
   color:string='#557376';
+  isMobile:boolean=false;
+
+  constructor() {
+    this.checkIfMobile();
+  }
   
   ngAfterViewInit() {
     AOS.init(); 
@@ -37,7 +42,13 @@ export class HomePageComponent implements AfterViewInit {
     }, 500); 
   }
 
-  @HostListener('window:scroll', [])
+  checkIfMobile() {
+    // Regular expression to check for common mobile devices
+    const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+    this.isMobile = mobileRegex.test(navigator.userAgent);
+  }
+
+  @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     const heroImgSection = document.getElementById('hero-img');
     const musicSection = document.getElementById('music-img');
@@ -145,5 +156,10 @@ export class HomePageComponent implements AfterViewInit {
     this.circleStyle.height = `${this.circleSize}px`;
     this.circleStyle.opacity = this.opacity;
    
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    this.checkIfMobile();
   }
 }

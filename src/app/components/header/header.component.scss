@@ -24,12 +24,14 @@ header{
             fill: #fff;
             width: $diameter;
             padding: 4px;
+            pointer-events: none;
         }
     }
     .menu{
         z-index: 5;
         .bars{
             width: $diameter;
+            pointer-events: none;
             .line{
                 fill: none;
                 stroke: #fff;

@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div id="home" [style.backgroundColor]="color">
-    <div  class="circle" [ngStyle]="circleStyle">
+    <div *ngIf="!isMobile"  class="circle" [ngStyle]="circleStyle" >
         <span class="circle-text">{{ text }}</span>
     </div>
     <app-hero></app-hero>
