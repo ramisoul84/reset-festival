@@ -136,13 +136,20 @@ export class HomePageComponent implements AfterViewInit {
       this.opacity = 0.4;
       this.updateCircleStyle();
     }
+
+    if (target.classList.contains('link-target')) {
+      this.circleSize = 50
+      this.opacity = 0.8;
+      this.text = 'open link'
+      this.updateCircleStyle();
+    }
   }
 
   @HostListener('document:mouseout', ['$event'])
   onMouseOut(event: MouseEvent) {
     // Check if the mouse leaves the specific element
     const target = event.target as HTMLElement;
-    if (target.classList.contains('hover-target')) {
+    if (target.classList.contains('hover-target') || target.classList.contains('link-target')) {
       this.circleSize = 10; // Reset circle size
       this.opacity = 1;
       this.text=""
@@ -161,5 +168,11 @@ export class HomePageComponent implements AfterViewInit {
   @HostListener('window:resize')
   onResize() {
     this.checkIfMobile();
+  }
+
+  goTop(){
+    document
+    .getElementById('hero')!
+    .scrollIntoView({ behavior: 'smooth' });
   }
 }

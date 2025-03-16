@@ -1,14 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { SliderComponent } from '../slider/slider.component';
-import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-experience',
-  imports: [SliderComponent,RouterLink],
-  templateUrl: './experience.component.html',
-  styleUrl: './experience.component.scss'
+  selector: 'app-djerba',
+  imports: [CommonModule],
+  templateUrl: './djerba.component.html',
+  styleUrl: './djerba.component.scss'
 })
-export class ExperienceComponent {
+export class DjerbaComponent {
   djerba: string[] = [
     'images/djerba/1.jpg',
     'images/djerba/2.jpg',
@@ -32,13 +31,5 @@ export class ExperienceComponent {
     'images/djerba/20.jpg',
     'images/djerba/21.jpg',
     'images/djerba/22.jpg',
-  ];
-
-  hotel: string[] = [
-    'images/hotel/1.jpg',
-    'images/hotel/2.jpg',
-    'images/hotel/3.jpg',
-    'images/hotel/4.webp',
-    'images/hotel/5.webp',
   ];
 }
