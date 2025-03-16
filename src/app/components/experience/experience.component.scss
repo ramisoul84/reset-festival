@@ -1,7 +1,5 @@
 #experience{
-    background-color: #557376;
     .info{
-        position: relative;
         .block{
             margin-bottom: 24px;
             .djerba-images{
@@ -24,5 +22,44 @@
             height: 10vh;
         }
       
+    }
+}
+
+
+@media  (min-width:901px) {
+    #experience{
+        .info{
+            .block{
+                margin-bottom: 48px;
+                .djerba-images{
+                    width: 40%;
+                    max-width: 320px;
+                    margin-left: 48px;
+                }
+                .block1{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 48px;
+                    .hotel-images{
+                        width: 50%;
+                        max-width: 640px;
+                    }
+                }
+            }
+           
+            .experience-decoration{
+                display: flex;
+                gap: 10px;
+                height: 10vw;
+            }
+          
+        }
+    }
+}
+
+@media  (min-width:1201px) {
+    #experience{
+        width: 1200px;
+        margin: 0 auto;
     }
 }

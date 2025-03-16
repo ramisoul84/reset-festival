@@ -1,5 +1,4 @@
 #fashion{
-    background-color: #db8a08;
     .video-wrapper{
         position: relative;
         margin-bottom: 6%;
@@ -23,7 +22,8 @@
             .links{
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: center;  
+                gap: 12px;
                 a{
                     text-decoration: none;
                     color: white;
@@ -42,5 +42,46 @@
             }
         }
     }
- 
+}
+
+@media  (min-width:901px) {
+    #fashion{
+
+        .info{
+            .fashion-images{
+                width: 40%;
+                max-width: 320px;
+                margin-left: 48px;
+            }
+            .partners{
+                margin-top: 32px;
+                .links{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 36px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        cursor: none;
+                        font-size: 12px;
+                        font-weight: 700;
+                        margin: 0 6px;
+                    }
+                }
+                .more{
+    
+                    font-size: 18px;
+
+                }
+            }
+        }
+    }
+}
+
+@media  (min-width:1201px) {
+    #fashion{
+        width: 1200px;
+        margin: 0 auto;
+    }
 }

@@ -1,5 +1,4 @@
 #music{
-    background-color:#db8a08;
     .video-wrapper{
         position: relative;
         margin-bottom: 6%;
@@ -73,5 +72,40 @@
                 margin-bottom: 6%;
             }
         }
+    }
+}
+
+@media  (min-width:901px) {
+    #music{
+        .info{
+            .container{
+                .text{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .line-up{
+                display: flex;
+                align-items: center;
+                .lineup-head{
+                    .lineup-text{
+                        font-size: 50px;
+                    }
+                    .decor1{
+                        width: 220px;
+                    }
+                    .decor2{
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  (min-width:1201px) {
+    #music{
+        width: 1200px;
+        margin: 0 auto;
     }
 }

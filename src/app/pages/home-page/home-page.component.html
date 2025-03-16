@@ -1,5 +1,8 @@
 <app-header></app-header>
-<div id="home">
+<div id="home" [style.backgroundColor]="color">
+    <div  class="circle" [ngStyle]="circleStyle">
+        <span class="circle-text">{{ text }}</span>
+    </div>
     <app-hero></app-hero>
     <app-music></app-music>
     <app-experience></app-experience>

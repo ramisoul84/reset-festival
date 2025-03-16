@@ -1,6 +1,5 @@
 footer{
     padding: 0.4rem;
-    background-color: #557376;
     table {
       padding: 0 1rem;
       padding: 1rem;
@@ -42,7 +41,6 @@ footer{
       }
       form{
         width: 100%;
-        
         background-color: transparent;
         input{
           color: white;
@@ -64,9 +62,3 @@ footer{
   color: green;
 }
 
-@media  (min-width:968px) {
-  footer{
-      width: 80vw;
-      margin: 0 auto;
-  }
-}

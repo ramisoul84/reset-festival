@@ -16,6 +16,7 @@ html{
 body{
     font-family: "Montserrat", serif;
     color:#fff;
+    cursor:default;
 }
 
 img {
@@ -40,3 +41,27 @@ img {
     padding: $top-padding $side-padding;
 }
 
+
+@media  (min-width: 600px) and (max-width: 900px){
+    html{
+        font-size: 22px; 
+    }
+}
+
+@media  (min-width: 901px) and (max-width: 1200px){
+    html{
+        font-size: 26px; 
+    }
+}
+
+@media  (min-width: 1201px) and (max-width: 1600px){
+    html{
+        font-size: 30px; 
+    }
+}
+
+@media  (min-width: 1601px){
+    html{
+        font-size: 40px; 
+    }
+}

@@ -1,5 +1,4 @@
-#works{
-    background-color: #557376;
+#work{
     .video-wrapper{
         position: relative;
         .decor{
@@ -9,5 +8,11 @@
             top: -14%;
             left: 40px;
         }
+    }
+}
+
+@media  (min-width:600px) {
+    #work{
+        background-color: transparent;
     }
 }

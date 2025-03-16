@@ -1,12 +1,16 @@
 <section id="hero">
-    <div class="ornament-container">
-        <img src="images/decors/ornament.png" alt="ornament image" >  
-        <ng-lottie
-        class="reset"
-        [options]="resetHeroOptions"
-        />    
-    </div>  
-    <img src="images/sections/promo.png" alt="promo image" class="promo">
+    <div class="back">
+        <div class="ornament-container">
+            <img src="images/decors/ornament.png" alt="ornament image" > 
+            <div  class="reset">
+                <ng-lottie
+                [options]="resetHeroOptions"
+                 />     
+                <img src="images/date.png" alt="" class="date">  
+            </div> 
+        </div>     
+        <img src="images/sections/promo.png" alt="promo image" class="promo" id="hero-img">
+    </div>
     <div class="info" >
         <div class="mission" data-aos="fade-up">
             <div class="mission-header" >

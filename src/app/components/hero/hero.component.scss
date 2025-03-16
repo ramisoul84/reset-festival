@@ -1,25 +1,37 @@
 #hero{
+   .back{
+    background-color: #fff;
+    position: relative;
     .ornament-container {
         width: auto;
         max-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center; 
-        position: relative;
-        z-index: -1;
         .reset{
             position: absolute;
             width: 56vw; 
-            margin-top: -4%;
+            margin-top: 4%;
             height: auto;   
-        }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            .date{
+                width: 28vw;
+            }
+        }  
+       
     }
     .promo{
         margin-top: -10vw;
-        cursor: none;
-    }
+        width: 100%;
+    }  
+   }
+   
+  
+  
     .info{
-        background-color: #557376;
         .mission{
             .mission-header{
                 display: flex;
@@ -40,5 +52,60 @@
                 }
             }
         }
+    }
+}
+
+@media  (min-width:600px) {
+    #hero{
+        .info{
+            .mission{
+                .mission-header{
+                    .head{
+                        font-size: 3.4vw;
+                        font-weight: 700;
+                    }
+                    .mission-decor1{
+                        width:   3.4vw;
+                    }
+                    .mission-decor2{
+                        width:   3.4vw;
+                    }
+                }
+            }
+        }
+      
+        
+    }
+}
+
+
+@media  (min-width:1201px) {
+    #hero{
+        width: 1200px;
+        margin: 0 auto;
+    
+    }
+}
+
+@media  (min-width:1601px) {
+    #hero{
+        .back{
+            .ornament-container {
+                .reset{
+                    position: absolute;
+                    width: 40vw; 
+                    margin-top: 4%;
+                      .date{
+                        width: 20vw;
+                    }
+                }  
+               
+            }
+            .promo{
+                margin-top: -10vw;
+                width: 100%;
+            }  
+           }
+           
     }
 }

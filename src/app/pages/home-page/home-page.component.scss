@@ -1,0 +1,19 @@
+#home{
+    transition: background-color 400ms ease-in-out;
+    .circle {
+        position: fixed;
+        border-radius: 50%;
+        background-color: #e63704;
+        pointer-events: none; /* Ensure it doesn't interfere with mouse events */
+        z-index: 40;
+        .circle-text {
+          height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+          color: white; /* Text color */
+          font-size: 10px; /* Adjust font size as needed */
+          user-select: none; /* Prevent text selection */
+        }
+      }
+}
