@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$side-padding:40px;
+$top-padding:24px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 18px; 
+}
+
+body{
+    font-family: "Montserrat", serif;
+    color:#fff;
+}
+
+img {
+    width: 100%; /* Make the image fit the container width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove extra space below the image */
+}
+
+.head{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: $top-padding;
+}
+
+.title{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.text{
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.info{
+    padding: $top-padding $side-padding;
+}
+
