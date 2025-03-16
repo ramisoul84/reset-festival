@@ -62,3 +62,12 @@ footer{
   color: green;
 }
 
+
+
+
+@media  (min-width:1201px) {
+  footer{
+      width: 1200px;
+      margin: 0 auto;
+  }
+}

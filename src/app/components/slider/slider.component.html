@@ -1,9 +1,11 @@
-<swiper-container class="swiper-container" 
+<div class="slider">
+  <swiper-container class="swiper-container" 
   loop=true
   autoplay=true
 >
-  <swiper-slide *ngFor="let image of images">
+  <swiper-slide *ngFor="let image of images" class="swiper-slide">
     <img [src]="image" alt="Slider Image" class="img swip-target" />
-    <img class="arrow" src="swipe.png" alt="">
   </swiper-slide>
 </swiper-container>
+<img class="arrow" src="swipe.png" alt="">
+</div>

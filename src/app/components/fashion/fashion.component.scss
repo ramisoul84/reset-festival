@@ -23,7 +23,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;  
-                gap: 12px;
+                gap: 8px;
                 a{
                     text-decoration: none;
                     color: white;
@@ -37,7 +37,7 @@
                 text-align: right;
                 font-size: 8px;
                 font-style: italic;
-                margin-top: 10px;
+                margin-top: 1vw;
                 margin-bottom: 6%;
             }
         }
@@ -46,7 +46,6 @@
 
 @media  (min-width:901px) {
     #fashion{
-
         .info{
             .fashion-images{
                 width: 40%;

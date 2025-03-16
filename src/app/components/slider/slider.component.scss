@@ -1,9 +1,13 @@
-swiper-slide{
+.slider{
+    width: 100%;
+    height: 100%;
     position: relative;
     .arrow{
         position: absolute;
-        width: 32px;
-        right: 5px;
+        width: 24px;
         bottom: 5px;
+        right: 5px;
+        z-index: 10;
     }
+    border: 2px solid #fff;
 }

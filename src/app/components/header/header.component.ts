@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -24,5 +24,32 @@ export class HeaderComponent {
       .getElementById(page.toLowerCase())!
       .scrollIntoView({ behavior: 'smooth' });
     }, 600); 
+  }
+
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll() {
+    const heroImgSection = document.getElementById('hero-img');
+    const musicSection = document.getElementById('music-img');
+    const adventureSection = document.getElementById('experience-img');
+    const fashionSection = document.getElementById('fashion-img');
+    const WorksSection = document.getElementById('work-img');
+    const height = window.innerHeight
+      const heroImgPosition = heroImgSection!.getBoundingClientRect().bottom;
+      const musicPosition = musicSection!.getBoundingClientRect().bottom;
+      const experiencePosition = adventureSection!.getBoundingClientRect().bottom;
+      const fashionPosition = fashionSection!.getBoundingClientRect().bottom;
+      const WorksPosition = WorksSection!.getBoundingClientRect().bottom;
+      if (WorksPosition - height < 50) {
+        this.headerColor = '#e63704'
+      }else if (fashionPosition - height < 50) {
+        this.headerColor = '#557376'
+      }else if (experiencePosition - height < 50) {
+        this.headerColor = '#e63704'
+      }else if (musicPosition - height < 50) {
+        this.headerColor = '#557376'
+      }else if (heroImgPosition - height < 50) {
+        this.headerColor = '#e63704'
+      }
   }
 }

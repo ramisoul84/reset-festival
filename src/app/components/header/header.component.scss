@@ -91,3 +91,68 @@ header{
         background: #000 !important;
     }
 }
+
+
+
+
+
+@media  (min-width:1201px) {
+    $diameter:4vw;
+    $padding:1vw;
+    header{
+        height: calc($diameter +  $padding * 2);
+        padding:$padding;
+        .circle{
+            width: $diameter;
+            height: $diameter;
+            border-radius: calc($diameter / 2);
+
+        }
+        .logo{
+            .ticket{
+                width: $diameter;
+                padding: 12px;
+            }
+        }
+        .menu{
+            .bars{
+                width: $diameter;
+                .line{
+                    stroke-width: 8;
+                }
+                .top{
+                    stroke-dasharray: 40 172;
+                }
+                .middle {
+                    stroke-dasharray: 40 111;
+                }
+                .bottom {
+                    stroke-dasharray: 40 172;
+                }
+                &.active .top {
+                    stroke-dashoffset: -132px;
+        
+                }
+                &.active .middle {
+                    stroke-dashoffset: -71px;
+                }
+                &.active .bottom {
+                    stroke-dashoffset: -132px;
+                    
+                }
+            }
+            
+        }
+        .nav{
+            clip-path: circle(calc($diameter / 2) at calc(100% - calc($diameter / 2 + $padding)) calc($diameter / 2 + $padding));
+            padding: $padding;
+            .item{
+                font-weight: 700;
+                font-size: 4vw;
+            }
+        }
+        .open{
+            clip-path: circle(75%);
+        }
+    }
+}
