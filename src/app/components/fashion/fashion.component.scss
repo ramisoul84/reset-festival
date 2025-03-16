@@ -1,0 +1,46 @@
+#fashion{
+    background-color: #db8a08;
+    .video-wrapper{
+        position: relative;
+        margin-bottom: 6%;
+        .decor{
+            position: absolute;
+            width: 30%;
+            height: 36%;
+            bottom: -18%;
+            right: 0;
+        }
+    }
+    .info{
+        .fashion-images{
+            width: 40%;
+            max-width: 200px;
+            float: right;
+            margin-left: 16px;
+        }
+        .partners{
+            margin-top: 32px;
+            .links{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    cursor: none;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin: 0 6px;
+                }
+            }
+            .more{
+                text-align: right;
+                font-size: 8px;
+                font-style: italic;
+                margin-top: 10px;
+                margin-bottom: 6%;
+            }
+        }
+    }
+ 
+}

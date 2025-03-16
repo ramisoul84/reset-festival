@@ -1,0 +1,91 @@
+$diameter:28px;
+$padding:8px;
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: calc($diameter +  $padding * 2);
+    padding:$padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    .circle{
+        width: $diameter;
+        height: $diameter;
+        border-radius: calc($diameter / 2);
+        transition: all 500ms ease-in-out;
+        cursor: pointer;
+    }
+    .logo{
+        .ticket{
+            fill: #fff;
+            width: $diameter;
+            padding: 4px;
+        }
+    }
+    .menu{
+        z-index: 5;
+        .bars{
+            width: $diameter;
+            .line{
+                fill: none;
+                stroke: #fff;
+                stroke-width: 8;
+                stroke-linecap: square;
+                transition: stroke-dasharray 400ms,  stroke-dashoffset 400ms;
+            }
+            .top{
+                stroke-dasharray: 40 172;
+            }
+            .middle {
+                stroke-dasharray: 40 111;
+            }
+            .bottom {
+                stroke-dasharray: 40 172;
+            }
+            &.active .top {
+                stroke-dashoffset: -132px;
+    
+            }
+            &.active .middle {
+                stroke-dashoffset: -71px;
+            }
+            &.active .bottom {
+                stroke-dashoffset: -132px;
+                
+            }
+        }
+    }
+    .nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        clip-path: circle(calc($diameter / 2) at calc(100% - calc($diameter / 2 + $padding)) calc($diameter / 2 + $padding));
+        transition: all 400ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 16px;
+        .item{
+            font-weight: 700;
+            font-size: 36px;
+            cursor: pointer;
+            transition: color 400ms ease;
+            &:hover{
+               color: #000;
+            }
+        }
+    }
+    .open{
+        clip-path: circle(75%);
+    }
+    .black{
+        background: #000 !important;
+    }
+}

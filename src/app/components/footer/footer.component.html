@@ -1,1 +1,25 @@
-<p>footer works!</p>
+<footer class="grid-container ">
+ 
+    <table >
+      <tr>
+        <td colspan="3" class="wrapper">
+         <p *ngIf="!er">stay updated!</p>
+         <p *ngIf="er" class="message" [ngClass]="{err:er,ok:!er && message!==''}">{{message}}</p>
+        <td rowspan="2" class="td3">
+          <div class="icons">
+
+            <img src="images/instagram.svg" alt="" class="icon">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <form [formGroup]="registerForm">
+            <input id="email" formControlName="email" type="email" placeholder="Email Address" autocomplete="off" >
+          </form>
+        </td>
+        <td class="submit" >  <button class="hover-target" type="submit" [disabled]="registerForm.invalid" (click)="onSubmit()">SUBMIT</button></td>
+      </tr>
+    </table>
+  </footer>
+  

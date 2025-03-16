@@ -1,0 +1,27 @@
+#intro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .video{
+        height: 100vh;
+        width:  100%;
+        object-fit: cover;
+    }
+    .bg{
+        position: absolute;
+        background-image: url('../../../../public/images/decors/bg.png'); 
+        background-repeat: repeat; 
+        width: 100%;
+        height: 100%;
+    }
+    .reset{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 50%;
+        min-width: 400px;
+        transform: translate(-50%,-50%);     
+    }
+}

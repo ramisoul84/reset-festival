@@ -1,0 +1,36 @@
+#tickets{
+    background-color: #557376;
+    .tickets-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
+        .head{
+            text-align: center;
+            font-size: 48px;
+        }
+        .decor{
+            width: 200px;
+            transform: rotate(180deg);
+        }
+    }
+    .body{
+        margin: 16px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .body-title{
+            font-size: 16;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+    }
+    .footer{
+        margin: 16px 0;
+        .footer-title{
+            font-size: 16;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+    }
+}
