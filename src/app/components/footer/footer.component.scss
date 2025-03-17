@@ -69,5 +69,47 @@ footer{
   footer{
       width: 1200px;
       margin: 0 auto;
+      table {
+        th, td {
+          border: 2px solid #fff; /* Adds borders to cells */
+          padding: 8px; /* Adds spacing inside cells */
+          text-align: left; /* Aligns text to the left */
+          }
+        .td3{
+          width: 120px;
+          .icon{
+            padding: 0;
+            width: 120px;
+            cursor: pointer;
+          }
+        }
+        .submit{
+          width: 200px;
+          
+          button{
+            cursor: pointer;
+            color: white;
+            font-weight: 700;
+            font-size: 2vw;
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            &:disabled{
+              color: gray;
+            }
+          }
+        }
+        form{
+          width: 100%;
+          background-color: transparent;
+          input{
+            color: white;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+          }
+        }
+      }
   }
 }
