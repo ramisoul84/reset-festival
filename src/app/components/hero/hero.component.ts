@@ -9,6 +9,7 @@ import { AnimationOptions, LottieComponent } from 'ngx-lottie';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+  isPlaying:boolean = false;
   resetHeroOptions: AnimationOptions = {
     path: 'animations/reset-hero.json',
     loop:true,

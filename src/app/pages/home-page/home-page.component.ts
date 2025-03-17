@@ -138,9 +138,16 @@ export class HomePageComponent implements AfterViewInit {
     }
 
     if (target.classList.contains('link-target')) {
-      this.circleSize = 50
-      this.opacity = 0.8;
-      this.text = 'open link'
+      this.circleSize = 65
+      this.opacity = 0.9;
+      this.text = 'Open Link'
+      this.updateCircleStyle();
+    }
+
+    if (target.classList.contains('slide-target')) {
+      this.circleSize = 85
+      this.opacity = 0.9;
+      this.text = 'Open Gallery'
       this.updateCircleStyle();
     }
   }
@@ -149,7 +156,7 @@ export class HomePageComponent implements AfterViewInit {
   onMouseOut(event: MouseEvent) {
     // Check if the mouse leaves the specific element
     const target = event.target as HTMLElement;
-    if (target.classList.contains('hover-target') || target.classList.contains('link-target')) {
+    if (target.classList.contains('hover-target') || target.classList.contains('link-target') || target.classList.contains('slide-target')) {
       this.circleSize = 10; // Reset circle size
       this.opacity = 1;
       this.text=""

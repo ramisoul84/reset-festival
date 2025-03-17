@@ -55,17 +55,15 @@
         .partners{
             margin-top: 32px;
             .links{
-                display: flex;
-                justify-content: space-between;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 align-items: center;  
-                gap: 8px;
+                gap: 10px;
                 a{
-                    text-decoration: none;
-                    color: white;
-                    cursor: none;
-                    font-size: 12px;
-                    font-weight: 700;
-                    margin: 0 6px;
+                    img{
+                        padding: 4px;
+                        cursor: pointer;
+                    }
                 }
             }
             .more{

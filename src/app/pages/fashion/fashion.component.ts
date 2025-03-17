@@ -1,15 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { SliderComponent } from '../slider/slider.component';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-fashion',
-  imports: [SliderComponent,RouterLink],
+  imports: [CommonModule],
   templateUrl: './fashion.component.html',
   styleUrl: './fashion.component.scss'
 })
 export class FashionComponent {
-  images: string[] = [
+  fashion: string[] = [
     'images/fashion/1.jpg',
     'images/fashion/2.jpg',
     'images/fashion/3.jpg',

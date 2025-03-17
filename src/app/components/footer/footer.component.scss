@@ -12,13 +12,12 @@ footer{
         }
       .td3{
         width: 60px;
-           .icons{  
-            width:  100%;
+        padding: 0;
           .icon{
             padding: 0;
-            width: 60px;
-          }
-      }
+            width: 100%;
+
+        }
       .wrapper{
         width: 100%;
         background-color: red;
@@ -78,9 +77,9 @@ footer{
         .td3{
           width: 120px;
           .icon{
-            padding: 0;
-            width: 120px;
+            width: 100%;
             cursor: pointer;
+
           }
         }
         .submit{

@@ -20,13 +20,17 @@
         .partners{
             margin-top: 32px;
             .links{
-                display: flex;
-                justify-content: space-between;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 align-items: center;  
-                gap: 8px;
+                gap: 10px;
                 a{
                     img{
+                        padding: 4px;
                         cursor:pointer;
+                    }
+                    &:nth-child(3){
+                        padding: 12px; 
                     }
                 }
             }
