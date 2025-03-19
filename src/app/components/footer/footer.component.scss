@@ -1,35 +1,95 @@
 footer{
-    padding: 0.4rem;
-    table {
-      padding: 0 1rem;
-      padding: 1rem;
+  padding: 0.4rem;
+  table {
+    padding: 0 1rem;
+    padding: 1rem;
+    width: 100%;
+    border-collapse: collapse; 
+    th, td {
+      border: 2px solid #fff; /* Adds borders to cells */
+      padding: 8px; /* Adds spacing inside cells */
+      text-align: left; /* Aligns text to the left */
+      }
+    .td3{
+      width: 60px;
+      padding: 0;
+        .icon{
+          padding: 0;
+          width: 100%;
+
+      }
+    .wrapper{
       width: 100%;
-      border-collapse: collapse; 
+      background-color: red;
+    }
+    }
+    .submit{
+      width: 80px;
+      
+      button{
+        cursor: pointer;
+        color: white;
+        font-weight: 700;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        &:disabled{
+          color: gray;
+        }
+      }
+    }
+    form{
+      width: 100%;
+      background-color: transparent;
+      input{
+        color: white;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+.err{
+font-weight: 700;
+color: red;
+}
+.ok{
+font-weight: 700;
+color: green;
+}
+
+
+
+
+@media  (min-width:1201px) {
+footer{
+    width: 1200px;
+    margin: 0 auto;
+    table {
       th, td {
         border: 2px solid #fff; /* Adds borders to cells */
         padding: 8px; /* Adds spacing inside cells */
         text-align: left; /* Aligns text to the left */
         }
       .td3{
-        width: 60px;
-        padding: 0;
-          .icon{
-            padding: 0;
-            width: 100%;
+        width: 120px;
+        .icon{
+          width: 100%;
+          cursor: pointer;
 
         }
-      .wrapper{
-        width: 100%;
-        background-color: red;
-      }
       }
       .submit{
-        width: 80px;
+        width: 200px;
         
         button{
           cursor: pointer;
           color: white;
           font-weight: 700;
+          font-size: 2vw;
           width: 100%;
           border: none;
           background-color: transparent;
@@ -51,64 +111,4 @@ footer{
       }
     }
 }
-
-.err{
-  font-weight: 700;
- color: red;
-}
-.ok{
-  font-weight: 700;
-  color: green;
-}
-
-
-
-
-@media  (min-width:1201px) {
-  footer{
-      width: 1200px;
-      margin: 0 auto;
-      table {
-        th, td {
-          border: 2px solid #fff; /* Adds borders to cells */
-          padding: 8px; /* Adds spacing inside cells */
-          text-align: left; /* Aligns text to the left */
-          }
-        .td3{
-          width: 120px;
-          .icon{
-            width: 100%;
-            cursor: pointer;
-
-          }
-        }
-        .submit{
-          width: 200px;
-          
-          button{
-            cursor: pointer;
-            color: white;
-            font-weight: 700;
-            font-size: 2vw;
-            width: 100%;
-            border: none;
-            background-color: transparent;
-            &:disabled{
-              color: gray;
-            }
-          }
-        }
-        form{
-          width: 100%;
-          background-color: transparent;
-          input{
-            color: white;
-            width: 100%;
-            background-color: transparent;
-            border: none;
-            outline: none;
-          }
-        }
-      }
-  }
 }

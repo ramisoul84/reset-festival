@@ -8,14 +8,22 @@ header{
     right: 0;
     height: calc($diameter +  $padding * 2);
     padding:$padding;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 5;
     .circle{
         width: $diameter;
         height: $diameter;
         border-radius: calc($diameter / 2);
+        -webkit-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
         transition: all 500ms ease-in-out;
         cursor: pointer;
     }
@@ -37,6 +45,8 @@ header{
                 stroke: #fff;
                 stroke-width: 8;
                 stroke-linecap: square;
+                -webkit-transition: stroke-dasharray 400ms,  stroke-dashoffset 400ms;
+                -o-transition: stroke-dasharray 400ms,  stroke-dashoffset 400ms;
                 transition: stroke-dasharray 400ms,  stroke-dashoffset 400ms;
             }
             .top{
@@ -67,17 +77,31 @@ header{
         left: 0;
         right: 0;
         height: 100vh;
-        clip-path: circle(calc($diameter / 2) at calc(100% - calc($diameter / 2 + $padding)) calc($diameter / 2 + $padding));
+        -webkit-clip-path: circle(calc($diameter / 2) at calc(100% - calc($diameter / 2 + $padding)) calc($diameter / 2 + $padding));
+                clip-path: circle(calc($diameter / 2) at calc(100% - calc($diameter / 2 + $padding)) calc($diameter / 2 + $padding));
+        -webkit-transition: all 400ms ease-in-out;
+        -o-transition: all 400ms ease-in-out;
         transition: all 400ms ease-in-out;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         padding: 16px;
         .item{
             font-weight: 700;
             font-size: 36px;
             cursor: pointer;
+            -webkit-transition: color 400ms ease;
+            -o-transition: color 400ms ease;
             transition: color 400ms ease;
             &:hover{
                color: #000;
@@ -85,7 +109,8 @@ header{
         }
     }
     .open{
-        clip-path: circle(75%);
+        -webkit-clip-path: circle(75%);
+                clip-path: circle(75%);
     }
     .black{
         background: #000 !important;
@@ -144,7 +169,8 @@ header{
             
         }
         .nav{
-            clip-path: circle(calc($diameter / 2) at calc(100% - calc($diameter / 2 + $padding)) calc($diameter / 2 + $padding));
+            -webkit-clip-path: circle(calc($diameter / 2) at calc(100% - calc($diameter / 2 + $padding)) calc($diameter / 2 + $padding));
+                    clip-path: circle(calc($diameter / 2) at calc(100% - calc($diameter / 2 + $padding)) calc($diameter / 2 + $padding));
             padding: $padding;
             .item{
                 font-weight: 700;
@@ -152,7 +178,8 @@ header{
             }
         }
         .open{
-            clip-path: circle(75%);
+            -webkit-clip-path: circle(75%);
+                    clip-path: circle(75%);
         }
     }
 }

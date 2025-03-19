@@ -20,9 +20,13 @@
         .partners{
             margin-top: 32px;
             .links{
+                display: -ms-grid;
                 display: grid;
+                -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
-                align-items: center;  
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;  
                 gap: 10px;
                 a{
                     img{
@@ -56,9 +60,15 @@
             .partners{
                 margin-top: 32px;
                 .links{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                     gap: 36px;
                     a{
                         text-decoration: none;

@@ -1,162 +1,221 @@
 #hero{
-   .back{
-    background-color: #fff;
-    position: relative;
-    .ornament-container {
-        width: auto;
-        max-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        .reset{
-            position: absolute;
-            width: 56vw; 
-            margin-top: 4%;
-            height: auto;   
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; 
-            .date{
-                width: 28vw;
+    .back{
+     background-color: #fff;
+     position: relative;
+     .ornament-container {
+         width: auto;
+         max-height: 100vh;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
+         -webkit-box-align: center;
+             -ms-flex-align: center;
+                 align-items: center; 
+         .reset{
+             position: absolute;
+             width: 56vw; 
+             margin-top: 4%;
+             height: auto;   
+             display: -webkit-box;   
+             display: -ms-flexbox;   
+             display: flex;
+             -webkit-box-orient: vertical;
+             -webkit-box-direction: normal;
+                 -ms-flex-direction: column;
+                     flex-direction: column;
+             -webkit-box-pack: center;
+                 -ms-flex-pack: center;
+                     justify-content: center;
+             -webkit-box-align: center;
+                 -ms-flex-align: center;
+                     align-items: center; 
+             .date{
+                 width: 28vw;
+             }
+         }     
+     }
+     .promo{
+         margin-top: -10vw;
+         width: 100%;
+         position: relative;
+         &:hover .play{
+             -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+             animation: heartbeat 1.5s ease-in-out infinite both;
+         } 
+         .watch{
+             position: absolute;
+             bottom: 1rem;
+             left: 40px;
+             font-weight: 700;
+             pointer-events: none;
+             .play{
+                     width: 40px;
+                     fill:white;
+                 }
+             }
+     }  
+    } 
+     .info{
+         .mission{
+             .mission-header{
+                 display: -webkit-box;
+                 display: -ms-flexbox;
+                 display: flex;
+                 -webkit-box-align: center;
+                     -ms-flex-align: center;
+                         align-items: center;
+                 -webkit-box-pack: center;
+                     -ms-flex-pack: center;
+                         justify-content: center;
+                 margin-bottom: 24px;
+                 gap: 6px;
+                 .head{
+                     font-size: 20px;
+                     font-weight: 700;
+                 }
+                 .mission-decor1{
+                     width:   20px;
+                     -webkit-transform: rotate(180deg);
+                         -ms-transform: rotate(180deg);
+                             transform: rotate(180deg);
+                 }
+                 .mission-decor2{
+                     width:   20px;
+                 }
+             }
+             .moto{
+                 font-style: italic;
+             }
+         }
+     }
+ }
+ 
+ @media  (min-width:600px) {
+     #hero{
+         .info{
+             .mission{
+                 .mission-header{
+                     .head{
+                         font-size: 3.4vw;
+                         font-weight: 700;
+                     }
+                     .mission-decor1{
+                         width:   3.4vw;
+                     }
+                     .mission-decor2{
+                         width:   3.4vw;
+                     }
+                 }
+             }
+         }
+       
+         
+     }
+ }
+ 
+ 
+ @media  (min-width:1201px) {
+     #hero{
+         width: 1200px;
+         margin: 0 auto;
+     
+     }
+ }
+ 
+ @media  (min-width:1601px) {
+     #hero{
+         .back{
+             .ornament-container {
+                 .reset{
+                     position: absolute;
+                     width: 40vw; 
+                     margin-top: 4%;
+                       .date{
+                         width: 20vw;
+                     }
+                 }  
+                
+             }
+             .promo{
+                 margin-top: -10vw;
+                 width: 100%;
+             }  
             }
-        }     
-    }
-    .promo{
-        margin-top: -10vw;
-        width: 100%;
-        position: relative;
-        &:hover .play{
-            -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-            animation: heartbeat 1.5s ease-in-out infinite both;
-        } 
-        .watch{
-            position: absolute;
-            bottom: 1rem;
-            left: 40px;
-            font-weight: 700;
-            pointer-events: none;
-            .play{
-                    width: 40px;
-                    fill:white;
-                }
-            }
-    }  
-   } 
-    .info{
-        .mission{
-            .mission-header{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 24px;
-                gap: 6px;
-                .head{
-                    font-size: 20px;
-                    font-weight: 700;
-                }
-                .mission-decor1{
-                    width:   20px;
-                    transform: rotate(180deg);
-                }
-                .mission-decor2{
-                    width:   20px;
-                }
-            }
-            .moto{
-                font-style: italic;
-            }
-        }
-    }
-}
-
-@media  (min-width:600px) {
-    #hero{
-        .info{
-            .mission{
-                .mission-header{
-                    .head{
-                        font-size: 3.4vw;
-                        font-weight: 700;
-                    }
-                    .mission-decor1{
-                        width:   3.4vw;
-                    }
-                    .mission-decor2{
-                        width:   3.4vw;
-                    }
-                }
-            }
-        }
-      
-        
-    }
-}
-
-
-@media  (min-width:1201px) {
-    #hero{
-        width: 1200px;
-        margin: 0 auto;
-    
-    }
-}
-
-@media  (min-width:1601px) {
-    #hero{
-        .back{
-            .ornament-container {
-                .reset{
-                    position: absolute;
-                    width: 40vw; 
-                    margin-top: 4%;
-                      .date{
-                        width: 20vw;
-                    }
-                }  
-               
-            }
-            .promo{
-                margin-top: -10vw;
-                width: 100%;
-            }  
-           }
-           
-    }
-}
-
-
-@keyframes heartbeat {
-    from {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: center center;
-              transform-origin: center center;
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    10% {
-      -webkit-transform: scale(0.91);
-              transform: scale(0.91);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    17% {
-      -webkit-transform: scale(0.98);
-              transform: scale(0.98);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    33% {
-      -webkit-transform: scale(0.87);
-              transform: scale(0.87);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    45% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-  }
+            
+     }
+ }
+ 
+ 
+ @-webkit-keyframes heartbeat {
+     from {
+       -webkit-transform: scale(1);
+               transform: scale(1);
+       -webkit-transform-origin: center center;
+               transform-origin: center center;
+       -webkit-animation-timing-function: ease-out;
+               animation-timing-function: ease-out;
+     }
+     10% {
+       -webkit-transform: scale(0.91);
+               transform: scale(0.91);
+       -webkit-animation-timing-function: ease-in;
+               animation-timing-function: ease-in;
+     }
+     17% {
+       -webkit-transform: scale(0.98);
+               transform: scale(0.98);
+       -webkit-animation-timing-function: ease-out;
+               animation-timing-function: ease-out;
+     }
+     33% {
+       -webkit-transform: scale(0.87);
+               transform: scale(0.87);
+       -webkit-animation-timing-function: ease-in;
+               animation-timing-function: ease-in;
+     }
+     45% {
+       -webkit-transform: scale(1);
+               transform: scale(1);
+       -webkit-animation-timing-function: ease-out;
+               animation-timing-function: ease-out;
+     }
+   }
+ 
+ 
+ @keyframes heartbeat {
+     from {
+       -webkit-transform: scale(1);
+               transform: scale(1);
+       -webkit-transform-origin: center center;
+               transform-origin: center center;
+       -webkit-animation-timing-function: ease-out;
+               animation-timing-function: ease-out;
+     }
+     10% {
+       -webkit-transform: scale(0.91);
+               transform: scale(0.91);
+       -webkit-animation-timing-function: ease-in;
+               animation-timing-function: ease-in;
+     }
+     17% {
+       -webkit-transform: scale(0.98);
+               transform: scale(0.98);
+       -webkit-animation-timing-function: ease-out;
+               animation-timing-function: ease-out;
+     }
+     33% {
+       -webkit-transform: scale(0.87);
+               transform: scale(0.87);
+       -webkit-animation-timing-function: ease-in;
+               animation-timing-function: ease-in;
+     }
+     45% {
+       -webkit-transform: scale(1);
+               transform: scale(1);
+       -webkit-animation-timing-function: ease-out;
+               animation-timing-function: ease-out;
+     }
+   }

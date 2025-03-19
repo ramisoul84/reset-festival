@@ -1,31 +1,43 @@
+
 #home{
-    transition: background-color 400ms ease-in-out;
-    .circle {
-        position: fixed;
-        border-radius: 50%;
-        background-color: #e63704;
-        pointer-events: none;
-        z-index: 40;
-        .circle-text {
-          height: 100%;
-         display: flex;
-         align-items: center !important;
-         justify-content: center !important;
-         font-weight: 700;
-          color: white; /* Text color */
-          font-size: 10px; /* Adjust font size as needed */
-          user-select: none; /* Prevent text selection */
-        }
+  -webkit-transition: background-color 400ms ease-in-out;
+  -o-transition: background-color 400ms ease-in-out;
+  transition: background-color 400ms ease-in-out;
+  .circle {
+      position: fixed;
+      border-radius: 50%;
+      background-color: #e63704;
+      pointer-events: none;
+      z-index: 40;
+      .circle-text {
+        height: 100%;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-align: center !important;
+           -ms-flex-align: center !important;
+               align-items: center !important;
+       -webkit-box-pack: center !important;
+           -ms-flex-pack: center !important;
+               justify-content: center !important;
+       font-weight: 700;
+        color: white; /* Text color */
+        font-size: 10px; /* Adjust font size as needed */
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; /* Prevent text selection */
       }
-      .top{
-        position: fixed;
-        left: 8px;
-        bottom: 8px;
-        width: 32px;
-        fill: #e63704;
-        cursor: pointer;
-        &:hover{
-          fill:black
-        }
+    }
+    .top{
+      position: fixed;
+      left: 8px;
+      bottom: 8px;
+      width: 32px;
+      fill: #e63704;
+      cursor: pointer;
+      &:hover{
+        fill:black
       }
+    }
 }

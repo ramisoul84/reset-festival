@@ -25,12 +25,23 @@
             }
         }
         .line-up{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             .lineup-head{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 width: 30vw;
                 .lineup-text{
                     font-size: 16px;
@@ -40,7 +51,9 @@
                 }
                 .decor1{
                     width: 60px;
-                    transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                            transform: rotate(180deg);
                 }
                 .decor2{
                     width: 60px;
@@ -55,9 +68,13 @@
         .partners{
             margin-top: 32px;
             .links{
+                display: -ms-grid;
                 display: grid;
+                -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
-                align-items: center;  
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;  
                 gap: 10px;
                 a{
                     img{
@@ -81,23 +98,35 @@
     #music{
         .info{
             .container{
+                display: -ms-grid;
                 display: grid;
+                -ms-grid-columns: 1fr 1vw 2fr;
                 grid-template-columns: 1fr 2fr;
                 gap: 1vw;
-                align-items: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 .image{
                     margin-right: 0;
                 }
                 .text{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    align-items: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                 }
             }
             .line-up{
+                display: -ms-grid;
                 display: grid;
+                -ms-grid-columns: 1fr 1vw 2fr;
                 grid-template-columns: 1fr 2fr;
                 gap: 1vw;
-                align-items: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 .lineup-head{
                     .lineup-text{
                         font-size: 50px;
@@ -117,9 +146,15 @@
             .partners{
                 margin-top: 32px;
                 .links{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                     gap: 36px;
                     a{
                         text-decoration: none;
@@ -175,9 +210,15 @@
             .partners{
                 margin-top: 32px;
                 .links{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                     gap: 36px;
                     a{
                         text-decoration: none;

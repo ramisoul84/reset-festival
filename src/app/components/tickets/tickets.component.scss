@@ -1,8 +1,15 @@
 #tickets{
     .tickets-wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-bottom: 32px;
         .head{
             text-align: center;
@@ -11,13 +18,20 @@
         }
         .decor{
             width: 200px;
-            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                    transform: rotate(180deg);
         }
     }
     .body{
         margin: 16px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 24px;
         .body-title{
             font-size: 16;
@@ -40,8 +54,13 @@
     #tickets{
         .body{
             margin: 16px 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
             gap: 2rem;
             .body-title{
                 font-size: 16;
