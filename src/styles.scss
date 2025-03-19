@@ -11,13 +11,19 @@ $top-padding:24px;
 
 html{
     scroll-behavior: smooth;
-    font-size: 18px; 
+    font-size: 16px; 
+    width: 100%; 
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body{
     font-family: "Montserrat", serif;
     color:#fff;
     cursor:default;
+    width: 100%; 
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 img {
@@ -29,7 +35,7 @@ img {
 .title{
     font-size: 0.9rem;
     font-weight: 500;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .text{
@@ -39,30 +45,34 @@ img {
 }
 
 .info{
-    padding: $top-padding $side-padding;
+    padding: 24px 40px;
 }
 
 
-@media  (min-width: 600px) and (max-width: 900px){
+@media  (min-width: 600px) and (max-width: 1200px){
     html{
         font-size: 22px; 
     }
-}
-
-@media  (min-width: 901px) and (max-width: 1200px){
-    html{
-        font-size: 26px; 
+    .info{
+        padding: 40px 60px;
     }
 }
 
-@media  (min-width: 1201px) and (max-width: 1600px){
+
+
+@media  (min-width: 1201px) and (max-width: 1919px){
     html{
-        font-size: 30px; 
+        font-size: 24px; 
+    }
+    .info{
+        padding: 60px 140px;
     }
 }
 
-@media  (min-width: 1601px){
+
+
+@media  (min-width: 1920px){
     html{
-        font-size: 40px; 
+        font-size: 50px; 
     }
 }

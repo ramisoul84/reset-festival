@@ -1,4 +1,6 @@
 #music{
+    max-width: 1920px;
+    margin: 0 auto;
     .video-wrapper{
         position: relative;
         margin-bottom: 6%;
@@ -12,16 +14,16 @@
     }
     .info{
         .container{
-            margin: 16px 0;
+            margin: 32px 0;
             .image{
-                width: 30vw;
+                width: 40%;
                 shape-outside: circle(50%);
                 float: left;
                 margin-right: 24px;
             }
             .text{
-                min-height: 30vw;
-                margin-bottom: 1vw;
+                min-height: 36vw;
+                margin-bottom: 32px;
             }
         }
         .line-up{
@@ -42,27 +44,28 @@
                 -webkit-box-align: center;
                     -ms-flex-align: center;
                         align-items: center;
-                width: 30vw;
+                width: 40%;
                 .lineup-text{
-                    font-size: 16px;
+                    font-size: 18px;
                     font-weight:700;
                     margin: 4px 0;
                   
                 }
                 .decor1{
-                    width: 60px;
+                    width: 70px;
                     -webkit-transform: rotate(180deg);
                         -ms-transform: rotate(180deg);
                             transform: rotate(180deg);
                 }
                 .decor2{
-                    width: 60px;
+                    width: 70px;
                 }
             }
             .djs{
                 font-weight: 500;
                 text-transform: uppercase;
                 width: 50vw;
+                line-height: 1.2rem;
             }
         }
         .partners{
@@ -70,12 +73,12 @@
             .links{
                 display: -ms-grid;
                 display: grid;
-                -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
                 -webkit-box-align: center;
                     -ms-flex-align: center;
                         align-items: center;  
-                gap: 10px;
+                gap: 40px;
                 a{
                     img{
                         padding: 4px;
@@ -94,55 +97,10 @@
     }
 }
 
-@media  (min-width:901px) {
+@media  (min-width:600px) {
     #music{
         .info{
-            .container{
-                display: -ms-grid;
-                display: grid;
-                -ms-grid-columns: 1fr 1vw 2fr;
-                grid-template-columns: 1fr 2fr;
-                gap: 1vw;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-                .image{
-                    margin-right: 0;
-                }
-                .text{
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-align: center;
-                        -ms-flex-align: center;
-                            align-items: center;
-                }
-            }
-            .line-up{
-                display: -ms-grid;
-                display: grid;
-                -ms-grid-columns: 1fr 1vw 2fr;
-                grid-template-columns: 1fr 2fr;
-                gap: 1vw;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-                .lineup-head{
-                    .lineup-text{
-                        font-size: 50px;
-                        max-width: 600px;
-                    }
-                    .decor1{
-                        width: 220px;
-                    }
-                    .decor2{
-                        width: 220px;
-                    }
-                }
-                .djs{
-                    width: 100%;
-                }
-            }
+
             .partners{
                 margin-top: 32px;
                 .links{
@@ -175,24 +133,21 @@
 
 @media  (min-width:1201px) {
     #music{
-        width: 1200px;
-        margin: 0 auto;
         .info{
             .container{
                 gap: 1vw;
                 .image{
-                    max-width: 400px;
+                    max-width: 300px;
                     margin-right: 0;
-                }
-                .text{
-                   
                 }
             }
             .line-up{
-
-                gap: 1vw;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 50px;
                 .lineup-head{
-                    max-width: 400px;
+                    max-width: 300px;
+                    margin-bottom: 50px;
                     .lineup-text{
                         font-size: 50px;
                     }
@@ -205,6 +160,12 @@
                 }
                 .djs{
                     width: 100%;
+                    line-height: 1.6rem;
+                    .more{
+                        display: inline-block;
+                        width: 100%;
+                        text-align: right;
+                    }
                 }
             }
             .partners{
@@ -219,14 +180,12 @@
                     -webkit-box-align: center;
                         -ms-flex-align: center;
                             align-items: center;
-                    gap: 36px;
+                    gap: 100px;
                     a{
-                        text-decoration: none;
-                        color: white;
-                        cursor: none;
-                        font-size: 12px;
-                        font-weight: 700;
-                        margin: 0 6px;
+                        .icon{
+                            padding: 0;
+                            width: 100px;
+                        }
                     }
                 }
                 .more{

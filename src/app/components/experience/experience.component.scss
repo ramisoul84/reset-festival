@@ -1,79 +1,79 @@
 #experience{
+    max-width: 1920px;
+    margin: 0 auto;
     .info{
-        .block{
-            margin-bottom: 24px;
-            .djerba-images{
-                width: 50%;
-                max-width: 200px;
-                float: right;
-                margin-left: 8px;
-            }
-            .block1{
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
-                gap: 16px;
-                .hotel-images{
-                    width: auto;
-                }
-            }
-        }
-        .experience-decoration{
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            height: 50px;
-        }
-      
-    }
-}
-
-
-@media  (min-width:901px) {
-    #experience{
-        .info{
-            .block{
-                margin-bottom: 48px;
+        .connect-wrapper{
+            width: 100%;
+            margin-bottom: 60px;
+            .connect-text{
+                width: 100%;
                 .djerba-images{
-                    width: 40%;
-                    max-width: 320px;
-                    margin-left: 48px;
+                    width: 60%;
+                    float: right;
+                    margin-left: 16px;
                 }
-                .block1{
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-orient: horizontal;
-                    -webkit-box-direction: normal;
-                        -ms-flex-direction: row;
-                            flex-direction: row;
-                    gap: 48px;
-                    .hotel-images{
-                        width: 50%;
-                        max-width: 640px;
-                    }
+            }    
+        }
+        .djerba-wrapper{
+            margin-bottom: 60px;
+        }
+        .hotel-wrapper{
+            width: 100%;
+            margin-bottom: 20px;
+            .hotel-text{
+                width: 100%;
+                .hotel-images{
+                    width: 100%;
+                    margin-top: 16px;
                 }
-            }
-           
-            .experience-decoration{
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                gap: 10px;
-                height: 10vw;
             }
           
         }
+        .experience-decoration{
+            height: 60px;
+        }
     }
 }
 
-@media  (min-width:1201px) {
+@media  (min-width:901px) {
     #experience{
-        width: 1200px;
+        max-width: 1920px;
         margin: 0 auto;
+        .info{
+            .connect-wrapper{
+                display: flex;
+                flex-direction: column;
+                 .connect-text{
+                    width: 100%;
+                    .djerba-images{
+                        width: 40%;
+                        margin-left: 40px;
+                    }
+                }    
+            }
+            .djerba-wrapper{
+                margin-bottom: 60px;
+            }
+            .hotel-wrapper{
+                width: 100%;
+                margin-bottom: 60px;
+                .hotel-text{
+                    width: 100%;
+                    display: flex;
+                    .hotel-images{
+                        width: 40%;
+                        float: right;
+                        margin-left: 40px;
+                        margin-top: 0;
+                    }
+                }
+              
+            }
+            .experience-decoration{
+                margin-top: 40px;
+                height: 140px;
+            }
+        }
     }
+
 }

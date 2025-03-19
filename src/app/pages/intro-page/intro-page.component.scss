@@ -27,4 +27,12 @@
             -ms-transform: translate(-50%,-50%);
                 transform: translate(-50%,-50%);     
     }
+    .sound{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: red;
+        cursor: pointer;
+        z-index: 3;
+    }
 }

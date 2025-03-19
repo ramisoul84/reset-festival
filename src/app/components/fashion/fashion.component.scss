@@ -1,4 +1,6 @@
 #fashion{
+    max-width: 1920px;
+    margin: 0 auto;
     .video-wrapper{
         position: relative;
         margin-bottom: 6%;
@@ -11,11 +13,17 @@
         }
     }
     .info{
-        .fashion-images{
-            width: 40%;
-            max-width: 200px;
-            float: right;
-            margin-left: 16px;
+        .fashion-wrapper{
+            width: 100%;
+            margin-bottom: 60px;
+            .fashion-text{
+                width: 100%;
+                .fashion-images{
+                    width: 60%;
+                    float: right;
+                    margin-left: 16px;
+                }
+            }    
         }
         .partners{
             margin-top: 32px;
@@ -86,12 +94,5 @@
                 }
             }
         }
-    }
-}
-
-@media  (min-width:1201px) {
-    #fashion{
-        width: 1200px;
-        margin: 0 auto;
     }
 }

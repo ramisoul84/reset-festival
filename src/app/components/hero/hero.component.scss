@@ -1,4 +1,6 @@
 #hero{
+    max-width: 1920px;
+    margin: 0 auto;
     .back{
      background-color: #fff;
      position: relative;
@@ -70,7 +72,8 @@
                  -webkit-box-pack: center;
                      -ms-flex-pack: center;
                          justify-content: center;
-                 margin-bottom: 24px;
+                 margin-bottom: 40px;
+                 margin-top: 16px;
                  gap: 6px;
                  .head{
                      font-size: 20px;
@@ -93,7 +96,7 @@
      }
  }
  
- @media  (min-width:600px) {
+ @media  (min-width:900px) {
      #hero{
          .info{
              .mission{
@@ -110,42 +113,37 @@
                      }
                  }
              }
-         }
-       
-         
+         } 
      }
  }
- 
  
  @media  (min-width:1201px) {
-     #hero{
-         width: 1200px;
-         margin: 0 auto;
-     
-     }
+    #hero{
+        .back{
+            .promo{
+                .watch{
+                    .play{
+                        width: 80px;
+                    }
+                }
+                
+            }
+        }
+        .info{
+            .mission{
+                .mission-header{
+                    margin-bottom: 50px;
+                  }
+            }
+        } 
+    }
  }
  
- @media  (min-width:1601px) {
-     #hero{
-         .back{
-             .ornament-container {
-                 .reset{
-                     position: absolute;
-                     width: 40vw; 
-                     margin-top: 4%;
-                       .date{
-                         width: 20vw;
-                     }
-                 }  
-                
-             }
-             .promo{
-                 margin-top: -10vw;
-                 width: 100%;
-             }  
-            }
-            
-     }
+
+
+ @media  (min-width:1920px) {
+
+
  }
  
  

@@ -38,4 +38,10 @@ export class IntroPageComponent implements AfterViewInit {
     video.loop = true;
     video.play(); // Start playing the video
   }
+
+  sound(event: Event){
+    event.stopPropagation(); // Stop the event from bubbling up to the parent
+    const video = this.videoPlayer.nativeElement;
+    video.muted=true
+  }
 }

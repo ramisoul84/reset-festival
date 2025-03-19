@@ -122,8 +122,8 @@ header{
 
 
 @media  (min-width:1201px) {
-    $diameter:4vw;
-    $padding:1vw;
+    $diameter:36px;
+    $padding:16px;
     header{
         height: calc($diameter +  $padding * 2);
         padding:$padding;
@@ -136,7 +136,7 @@ header{
         .logo{
             .ticket{
                 width: $diameter;
-                padding: 12px;
+                padding: 6px;
             }
         }
         .menu{
