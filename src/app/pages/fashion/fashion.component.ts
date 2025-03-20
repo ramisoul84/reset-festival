@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './fashion.component.scss'
 })
 export class FashionComponent {
+  show:boolean=false;
+  src:string= '';
   fashion: string[] = [
     'images/fashion/1.jpg',
     'images/fashion/2.jpg',
@@ -33,4 +35,10 @@ export class FashionComponent {
     'images/fashion/22.jpg',
     'images/fashion/23.jpg',
   ];
+
+  onImageClick(event: Event):void{
+    const imageElement = event.target as HTMLImageElement;
+    this.src = imageElement.src;
+    this.show = !this.show
+  }
 }

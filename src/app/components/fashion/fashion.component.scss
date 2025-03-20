@@ -57,41 +57,54 @@
     }
 }
 
-@media  (min-width:901px) {
+@media  (min-width:601px) {
     #fashion{
         .info{
-            .fashion-images{
-                width: 40%;
-                max-width: 320px;
-                margin-left: 48px;
+            .fashion-wrapper{
+                .fashion-text{
+                    .fashion-images{
+                        width: 50%;
+                    }
+                }    
             }
             .partners{
-                margin-top: 32px;
                 .links{
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-pack: justify;
-                        -ms-flex-pack: justify;
-                            justify-content: space-between;
-                    -webkit-box-align: center;
-                        -ms-flex-align: center;
-                            align-items: center;
-                    gap: 36px;
+                    gap: 16px;
                     a{
-                        text-decoration: none;
-                        color: white;
-                        cursor: none;
-                        font-size: 12px;
-                        font-weight: 700;
-                        margin: 0 6px;
+                        img{
+                            padding: 14px;
+                            cursor:pointer;
+                        }
+                        &:nth-child(3){
+                            padding: 24px;      
+                        }
                     }
                 }
                 .more{
-    
                     font-size: 18px;
-
                 }
+            }
+        }
+    }
+}
+
+
+@media  (min-width:769px) {
+    #fashion{
+        .info{
+            .fashion-wrapper{
+                display: flex;
+                flex-direction: column;
+                .fashion-text{
+                    width: 100%;
+                    .fashion-images{
+                        width: 40%;
+                        margin-left: 40px;
+                    }
+                }    
+            }
+            .partners{
+            
             }
         }
     }

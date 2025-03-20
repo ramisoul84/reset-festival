@@ -69,19 +69,11 @@
             }
         }
         .partners{
-            margin-top: 32px;
             .links{
-                display: -ms-grid;
-                display: grid;
-                -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
-                grid-template-columns: 1fr 1fr 1fr;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;  
-                gap: 40px;
+                    gap: 40px;
                 a{
                     img{
-                        padding: 4px;
+                        padding: 10px;
                         cursor: pointer;
                     }
                 }
@@ -97,10 +89,9 @@
     }
 }
 
-@media  (min-width:600px) {
+@media  (min-width:601px) {
     #music{
         .info{
-
             .partners{
                 margin-top: 32px;
                 .links{
@@ -131,14 +122,22 @@
     }
 }
 
-@media  (min-width:1201px) {
+@media  (min-width:769px) {
     #music{
         .info{
             .container{
-                gap: 1vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 32px;
                 .image{
-                    max-width: 300px;
-                    margin-right: 0;
+                   width: 260px;
+                   margin-right: 0;
+                }
+                .text{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0;
                 }
             }
             .line-up{
@@ -146,16 +145,19 @@
                 flex-direction: column;
                 margin-bottom: 50px;
                 .lineup-head{
-                    max-width: 300px;
-                    margin-bottom: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    margin-bottom: 30px;
                     .lineup-text{
-                        font-size: 50px;
+                        font-size: 30px;
                     }
                     .decor1{
-                        width: 220px;
+                        width: 140px;
                     }
                     .decor2{
-                        width: 220px;
+                        width: 140px;
                     }
                 }
                 .djs{

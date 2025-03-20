@@ -1,12 +1,18 @@
 <footer class="grid-container ">
- 
+  <div  class="waves">
+    <p>SEE YOU ON DJERBA ISLAND</p>
+    <ng-lottie
+      [options]="wavesOptions"
+    />  
+  </div>
+     
     <table >
       <tr>
         <td colspan="3" class="wrapper">
          <p *ngIf="!er" class="text">stay updated!</p>
          <p *ngIf="er" class="message" [ngClass]="{err:er,ok:!er && message!==''}">{{message}}</p>
         <td rowspan="2" class="td3">
-          <img src="images/instagram.svg" alt="" class="icon">
+          <img src="images/insta.jpg" alt="" class="icon">
         </td>
       </tr>
       <tr>

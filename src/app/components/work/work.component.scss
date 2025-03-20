@@ -1,4 +1,6 @@
 #work{
+    max-width: 1920px;
+    margin: 0 auto;
     .video-wrapper{
         position: relative;
         .decor{
@@ -17,9 +19,3 @@
     }
 }
 
-@media  (min-width:1201px) {
-    #work{
-        width: 1200px;
-        margin: 0 auto;
-    }
-}

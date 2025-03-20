@@ -1,13 +1,28 @@
 #fashion-page{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 6px;
+    .gallery{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 6px;
+        img{
+            cursor: pointer;
+        }
+    }
+  
+    .image{
+        position: absolute;
+        width: 100%;
+        .close{
+            position: absolute;
+            left: 16px;
+            top:16px;
+            fill:red;
+            width:32px;
+            cursor: pointer;
+        }
+    }
 }
 
 @media (min-width:900px){
-    #fashion-page{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 12px;
-    }
+
 }

@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './djerba.component.scss'
 })
 export class DjerbaComponent {
+  show:boolean=false;
+  src:string= '';
   djerba: string[] = [
     'images/djerba/1.jpg',
     'images/djerba/2.jpg',
@@ -32,4 +34,10 @@ export class DjerbaComponent {
     'images/djerba/21.jpg',
     'images/djerba/22.jpg',
   ];
+
+  onImageClick(event: Event):void{
+    const imageElement = event.target as HTMLImageElement;
+    this.src = imageElement.src;
+    this.show = !this.show
+  }
 }

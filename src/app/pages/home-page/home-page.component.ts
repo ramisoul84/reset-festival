@@ -150,13 +150,20 @@ export class HomePageComponent implements AfterViewInit {
       this.text = 'Open Gallery'
       this.updateCircleStyle();
     }
+
+    if (target.classList.contains('play-target')) {
+      this.circleSize = 85
+      this.opacity = 0.9;
+      this.text = 'PLAY PROMO'
+      this.updateCircleStyle();
+    }
   }
 
   @HostListener('document:mouseout', ['$event'])
   onMouseOut(event: MouseEvent) {
     // Check if the mouse leaves the specific element
     const target = event.target as HTMLElement;
-    if (target.classList.contains('hover-target') || target.classList.contains('link-target') || target.classList.contains('slide-target')) {
+    if (target.classList.contains('hover-target') || target.classList.contains('link-target') || target.classList.contains('slide-target')  || target.classList.contains('play-target')) {
       this.circleSize = 10; // Reset circle size
       this.opacity = 1;
       this.text=""

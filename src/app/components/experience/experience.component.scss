@@ -4,7 +4,7 @@
     .info{
         .connect-wrapper{
             width: 100%;
-            margin-bottom: 60px;
+            margin-bottom: 32px;
             .connect-text{
                 width: 100%;
                 .djerba-images{
@@ -15,7 +15,7 @@
             }    
         }
         .djerba-wrapper{
-            margin-bottom: 60px;
+            margin-bottom: 32px;
         }
         .hotel-wrapper{
             width: 100%;
@@ -35,10 +35,38 @@
     }
 }
 
-@media  (min-width:901px) {
+@media  (min-width:601px) {
     #experience{
-        max-width: 1920px;
-        margin: 0 auto;
+        .info{
+            .connect-wrapper{
+                .connect-text{
+                    .djerba-images{
+                        width: 50%;
+                    }
+                }    
+            }
+            .hotel-wrapper{
+                .hotel-text{
+                    width: 100%;
+                    display: flex;
+                    .hotel-images{
+                        width: 50%;
+                        height: fit-content;
+                        float: right;
+                        margin-left: 16px;
+                        margin-top: 0;
+                    }
+                }
+              
+            }
+        }
+
+
+    }
+}
+
+@media  (min-width:769px) {
+    #experience{
         .info{
             .connect-wrapper{
                 display: flex;

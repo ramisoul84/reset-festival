@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ClientService } from '../../_services/register';
 import { Client } from '../../_models/client';
+import { AnimationOptions, LottieComponent } from 'ngx-lottie';
 
 @Component({
   selector: 'app-footer',
-  imports: [CommonModule,ReactiveFormsModule],
+  imports: [CommonModule,ReactiveFormsModule,LottieComponent],
   providers:[ClientService],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
@@ -15,6 +16,10 @@ export class FooterComponent {
   message: string = "err";
   er:boolean = false
   registerForm: FormGroup;
+  wavesOptions: AnimationOptions = {
+      path: 'animations/waves.json',
+      loop:true,
+    };
   constructor(private fb: FormBuilder, private clientService: ClientService) {
     this.registerForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
