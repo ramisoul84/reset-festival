@@ -8,19 +8,137 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
     font-weight: 700;
     margin-bottom: -6px;
   }
+  .mailing{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    border: 2px solid white;
+    .mailing-txt{
+      width: 100%;
+      .msg{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-bottom: 2px solid white;
+        height: 30px;
+        padding-left: 16px;
+      }
+      .input{
+        display: flex;
+        align-items: center;
+        height: 28px;
+        padding-left: 16px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        &::placeholder{
+          color: rgb(192, 185, 185);
+        }
+      }
+    }
+    .actions{
+      display: flex;
+      .btn{
+        width: 62px;
+        height: 60px;
+        outline: none;
+        border: none;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: transparent;
+        cursor: pointer;
+        color: white;
+        font-weight: 900;
+        &:disabled{
+          background-color: gray;
+          color: gainsboro;
+          cursor: default;
+        }
+      }
+      .insta{
+        height: 100%;
+        img{
+          width: 62px;
+          height: 60px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media  (min-width:1201px) {
+  footer{
+    .mailing{
+      height: 84px;
+      .mailing-txt{
+        .msg{
+          height: 40px;
+        }
+        .input{
+          height: 40px;
+        }
+      }
+      .actions{
+        display: flex;
+        .btn{
+          width: 82px;
+          height: 80px;
+          outline: none;
+          border: none;
+          border-right: 2px solid white;
+          border-left: 2px solid white;
+          background-color: transparent;
+          cursor: pointer;
+          color: white;
+          font-weight: 900;
+          &:disabled{
+            background-color: gray;
+            color: gainsboro;
+            cursor: default;
+          }
+        }
+        .insta{
+          height: 100%;
+          img{
+            width: 82px;
+            height: 80px;
+            cursor: pointer;
+          }
+        }
+      }
+   
+    }
+
+  }
+}
+
+.err{
+  font-weight: 700;
+  color: rgb(194, 29, 0);
+  }
+  .ok{
+  font-weight: 700;
+  color: green;
+  }
+
+/*
+footer{
+
+
   table {
     padding: 0 1rem;
     padding: 1rem;
     width: 100%;
     border-collapse: collapse; 
     th, td {
-      border: 2px solid #fff; /* Adds borders to cells */
-      padding: 8px; /* Adds spacing inside cells */
-      text-align: left; /* Aligns text to the left */
+      border: 2px solid #fff; 
+      padding: 8px;
+      text-align: left;
       }
     .td3{
       width: 100px;
@@ -65,26 +183,18 @@ footer{
   }
 }
 
-.err{
-font-weight: 700;
-color: red;
-}
-.ok{
-font-weight: 700;
-color: green;
-}
 
 
 
 
-@media  (min-width:1201px) {
-footer{
+
+
 
     table {
       th, td {
-        border: 2px solid #fff; /* Adds borders to cells */
-        padding: 8px; /* Adds spacing inside cells */
-        text-align: left; /* Aligns text to the left */
+        border: 2px solid #fff; 
+        padding: 8px; 
+        text-align: left; 
         }
       .td3{
         width: 120px;
@@ -124,3 +234,6 @@ footer{
     }
 }
 }
+
+
+*/

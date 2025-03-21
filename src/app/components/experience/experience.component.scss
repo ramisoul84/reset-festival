@@ -30,6 +30,7 @@
           
         }
         .experience-decoration{
+            margin-top: 40px;
             height: 60px;
         }
     }
@@ -98,10 +99,38 @@
               
             }
             .experience-decoration{
-                margin-top: 40px;
-                height: 140px;
+                height: 100px;
             }
         }
     }
 
+}
+
+@media  (min-width:1200px) {
+    #experience{
+        .info{
+            .connect-wrapper{
+      
+                 .connect-text{
+   
+                    .djerba-images{
+                        width: 30%;
+
+                    }
+                }    
+            }
+            .hotel-wrapper{
+    
+                .hotel-text{
+
+                    .hotel-images{
+                        width: 30%;
+    
+                    }
+                }
+              
+            }
+        }
+
+    }
 }

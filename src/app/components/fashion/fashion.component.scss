@@ -103,9 +103,25 @@
                     }
                 }    
             }
-            .partners{
-            
+
+        }
+    }
+}
+
+@media  (min-width:1200px) {
+    #fashion{
+        .info{
+            .fashion-wrapper{
+             
+                .fashion-text{
+               
+                    .fashion-images{
+                        width: 30%;
+                    
+                    }
+                }    
             }
+
         }
     }
 }

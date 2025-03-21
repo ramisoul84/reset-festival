@@ -1,10 +1,37 @@
-<footer class="grid-container ">
+<footer>
   <div  class="waves">
     <p>SEE YOU ON DJERBA ISLAND</p>
     <ng-lottie
       [options]="wavesOptions"
     />  
   </div>
+  <div class="mailing">
+    <div class="mailing-txt">
+      <div class="msg">
+        <p *ngIf="!er" class="text">Stay updated!</p>
+        <p *ngIf="er" class="message text" [ngClass]="{err:er,ok:!er && message!==''}">{{message}}</p>
+      </div>
+      <form [formGroup]="registerForm">
+        <input class="input text" id="email" formControlName="email" type="email" placeholder="Email Address" autocomplete="off" >
+      </form>
+    </div>
+    <div class="actions">
+      <button class="btn hover-target" [disabled]="registerForm.invalid" (click)="onSubmit()">
+        JOIN
+      </button>
+      <div class="insta">
+        <img src="images/insta.jpg" alt="" class="icon">
+      </div>
+    </div>
+  </div>
+
+
+</footer>
+
+<!--
+  
+<footer class="grid-container ">
+
      
     <table >
       <tr>
@@ -26,3 +53,6 @@
     </table>
   </footer>
   
+
+
+-->

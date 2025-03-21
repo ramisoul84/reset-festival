@@ -2,7 +2,7 @@
     .gallery{
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4,1fr);
         gap: 6px;
         img{
             cursor: pointer;
@@ -23,6 +23,12 @@
     }
 }
 
-@media (min-width:900px){
 
+@media (min-width:1200px){
+    #fashion-page{
+        .gallery{
+            grid-template-columns: repeat(5,1fr);
+
+        }
+    }
 }
