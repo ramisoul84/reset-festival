@@ -33,13 +33,13 @@ img {
 }
 
 .title{
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
 
 .text{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 300;
     text-align: justify;
 }
@@ -62,10 +62,10 @@ img {
 
 @media  (min-width: 1201px) and (max-width: 1919px){
     html{
-        font-size: 24px; 
+        font-size: 26px; 
     }
     .info{
-        padding: 60px 140px;
+        padding: 60px 220px;
     }
 }
 

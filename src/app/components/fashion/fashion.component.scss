@@ -103,6 +103,24 @@
                     }
                 }    
             }
+            .partners{
+                .links{
+                    gap: 32px;
+                    a{
+                        img{
+                            padding: 0 40px;
+                            cursor:pointer;
+                        }
+                        &:nth-child(3){
+                            padding: 24px;      
+                        }
+                    }
+                }
+                .more{
+                    font-size: 18px;
+                }
+            }
+
 
         }
     }
@@ -112,11 +130,11 @@
     #fashion{
         .info{
             .fashion-wrapper{
-             
+           
                 .fashion-text{
                
                     .fashion-images{
-                        width: 30%;
+                        width: 40%;
                     
                     }
                 }    
