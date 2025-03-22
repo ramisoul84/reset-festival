@@ -183,3 +183,68 @@ header{
         }
     }
 }
+
+
+
+@media  (min-width:1920px) {
+    $diameter:66px;
+    $padding:20px;
+    header{
+        height: calc($diameter +  $padding * 2);
+        padding:$padding;
+        .circle{
+            width: $diameter;
+            height: $diameter;
+            border-radius: calc($diameter / 2);
+
+        }
+        .logo{
+            .ticket{
+                width: $diameter;
+                padding: 10px;
+            }
+        }
+        .menu{
+            .bars{
+                width: $diameter;
+                .line{
+                    stroke-width: 8;
+                }
+                .top{
+                    stroke-dasharray: 40 172;
+                }
+                .middle {
+                    stroke-dasharray: 40 111;
+                }
+                .bottom {
+                    stroke-dasharray: 40 172;
+                }
+                &.active .top {
+                    stroke-dashoffset: -132px;
+        
+                }
+                &.active .middle {
+                    stroke-dashoffset: -71px;
+                }
+                &.active .bottom {
+                    stroke-dashoffset: -132px;
+                    
+                }
+            }
+            
+        }
+        .nav{
+            -webkit-clip-path: circle(calc($diameter / 2) at calc(100% - calc($diameter / 2 + $padding)) calc($diameter / 2 + $padding));
+                    clip-path: circle(calc($diameter / 2) at calc(100% - calc($diameter / 2 + $padding)) calc($diameter / 2 + $padding));
+            padding: $padding;
+            .item{
+                font-weight: 700;
+                font-size: 4vw;
+            }
+        }
+        .open{
+            -webkit-clip-path: circle(75%);
+                    clip-path: circle(75%);
+        }
+    }
+}
