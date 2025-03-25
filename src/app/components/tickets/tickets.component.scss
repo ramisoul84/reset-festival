@@ -18,26 +18,12 @@
                     align-items: center;
             justify-content: center;
             cursor: pointer;
-            width: fit-content;
-            margin-bottom: 32px;
-            background-image: url('../../../../public/images/djerba/22.jpg'); 
-            background-size: 200%; /* Enlarged for smooth animation */
-            background-position: 0 50%;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: animate-background 5s infinite alternate linear;
-            /*
-            color: black;
-            
-            text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
-            animation: glow 1.5s infinite alternate;
-            */
+  
             .head{
                 text-align: center;
                 font-size: 40px;
                 font-weight: 700;
-                color: transparent;    
+                color: white;    
 
             }
             .decor1{
