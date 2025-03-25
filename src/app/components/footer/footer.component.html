@@ -1,4 +1,6 @@
 <footer>
+
+<div class="info">
   <div class="waves-wrapper" >
     <p>SEE YOU ON DJERBA ISLAND</p>
     <ng-lottie
@@ -6,6 +8,25 @@
       [options]="wavesOptions"
     />  
   </div>
+    <p class="form-head">Stay Updated! Join Our Mailling List ..</p>
+    <form [formGroup]="registerForm">
+      <input class="text" id="email" formControlName="email" type="email" placeholder="Name" autocomplete="off" >
+      <input class="text" id="email" formControlName="email" type="email" placeholder="Email Address" autocomplete="off" >
+      <div class="btns">
+        <button class="btn hover-target" [disabled]="registerForm.invalid" (click)="onSubmit()">JOIN</button>
+        <a href="https://www.instagram.com/association_of_unison/?hl=en" target="_blank" >
+          <img class="icon" src="images/insta.jpg"  alt="" class="icon hover-target">
+      </a>
+      </div> 
+    </form>
+    <p *ngIf="er" class="message text" [ngClass]="{err:er,ok:!er && message!==''}">{{message}}</p>
+</div>
+
+</footer>
+
+<!--
+  
+
   <div class="mailing">
     <div class="mailing-txt">
       <div class="msg">
@@ -21,16 +42,16 @@
         JOIN
       </button>
       <div class="insta">
-        <img src="images/insta.jpg" alt="" class="icon">
+     
       </div>
     </div>
   </div>
 
 
-</footer>
 
-<!--
-  
+
+
+
 <footer class="grid-container ">
 
      

@@ -38,7 +38,7 @@ export class ExperienceComponent {
     'images/hotel/1.jpg',
     'images/hotel/2.jpg',
     'images/hotel/3.jpg',
-    'images/hotel/4.webp',
-    'images/hotel/5.webp',
+    'images/hotel/4.jpg',
+    'images/hotel/5.jpg',
   ];
 }

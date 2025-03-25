@@ -1,23 +1,95 @@
 footer{
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0.4rem;
   .waves-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     .waves{
-      width: 50%;
+      width: 90%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       font-weight: 700;
-      margin-top: -10px;
       margin-bottom: 60px;
     }
   }
+  .form-head{
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    input{
+      background-color: transparent;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid white;
+      color: white;
+      &::placeholder{
+        color: lightgray;
+      }
+    }
+    .btns{
+      display: flex;
+      justify-content: space-between;
+      .btn{
+        width: fit-content;
+        background-color: transparent;
+        outline: none;
+        border: 2px solid white;
+        padding: 0.4rem;
+        color: white;
+        font-weight: 700;
+        font-size: 0.8rem;
+        cursor: pointer;
+        &:disabled{
+          background-color: gray;
+          color: lightgray;
+        }
+      }
+      .icon{
+        height: 60px;
+        cursor: pointer;
+        border: 2px solid white;
+      }
+    }
+
+  }
+}
+
+@media  (min-width:900px) {
+  footer{
+    .waves-wrapper{
+      .waves{
+        width: 60%;
+        margin-top: -10px;
+      }
+    }
+    form{
+      input{
+      }
+      .btns{
+        .btn{
+        }
+        .icon{
+        }
+      }
+  
+    }
+  }
+}
+
+
+/*
+footer{
+
+  
+
 
   .mailing{
     display: flex;
