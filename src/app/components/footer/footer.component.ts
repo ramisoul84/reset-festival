@@ -13,8 +13,8 @@ import { AnimationOptions, LottieComponent } from 'ngx-lottie';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  message: string = "err";
-  er:boolean = false
+  message: string = "";
+  msg:boolean = false
   registerForm: FormGroup;
   wavesOptions: AnimationOptions = {
       path: 'animations/waves.json',
@@ -22,6 +22,7 @@ export class FooterComponent {
     };
   constructor(private fb: FormBuilder, private clientService: ClientService) {
     this.registerForm = this.fb.group({
+      name: ['', ],
       email: ['', [Validators.required, Validators.email]],
     });
   }
@@ -29,22 +30,25 @@ export class FooterComponent {
   onSubmit() {
     if (this.registerForm.valid) {
       const client: Client = {
+        name: this.registerForm.controls['name'].value,
         email: this.registerForm.controls['email'].value,
       }
       this.clientService.createClient(client).subscribe({
         next: () => {
-          this.message = client.email + ' has been added to the mailing list!'
+          this.message = client.email + ' has been added to mailling list!'
+          this.msg=true
           setTimeout(() => {
             this.message = '';
+            this.msg=false
           }, 3000)
           this.registerForm.reset();
         },       
         error: err => {
           this.message = err.error;
-          this.er=true
+          this.msg=true
           setTimeout(() => {
             this.message = '';
-            this.er=false
+            this.msg=false
           }, 3000); 
         } 
       });

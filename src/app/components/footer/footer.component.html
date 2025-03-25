@@ -10,8 +10,8 @@
   </div>
     <p class="form-head title">Stay Updated! Join Our Mailling List ..</p>
     <form [formGroup]="registerForm">
-      <input class="text" id="email" formControlName="email" type="email" placeholder="Name" autocomplete="off" >
-      <input class="text" id="email" formControlName="email" type="email" placeholder="Email Address" autocomplete="off" >
+      <input class="text" id="name" formControlName="name" type="text" placeholder="Name" autocomplete="off" >
+      <input class="text" id="email" formControlName="email" type="email" placeholder="Email*" autocomplete="off" >
       <div class="btns">
         <button class="btn hover-target" [disabled]="registerForm.invalid" (click)="onSubmit()">JOIN</button>
         <a href="https://www.instagram.com/association_of_unison/?hl=en" target="_blank" >
@@ -19,7 +19,7 @@
       </a>
       </div> 
     </form>
-    <p *ngIf="er" class="message text" [ngClass]="{err:er,ok:!er && message!==''}">{{message}}</p>
+    <p *ngIf="msg" class="msg text" >{{message}}</p>
 </div>
 
 </footer>
