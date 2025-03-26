@@ -1,9 +1,11 @@
 <div class="slider">
-  <swiper-container class="swiper-container"  loop="true"
-  autoplay="true" pagination="true"
+  <swiper-container class="swiper-container"  
+  loop="true"
+  autoplay="true"   
 >
   <swiper-slide *ngFor="let image of images" >
     <img [src]="image" alt="Slider Image" class="img  slide-target" />
   </swiper-slide>
 </swiper-container>
+<div class="arrow">Open Gallery</div>
 </div>

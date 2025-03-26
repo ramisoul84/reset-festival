@@ -5,9 +5,18 @@
     border: 2px solid white;
     .arrow{
         position: absolute;
-        width: 24px;
         bottom: 5px;
-        right: 5px;
+        left: 5px;
         z-index: 10;
     }
 }
+
+
+@media  (min-width: 600px){
+   .slider{
+        .arrow{
+        visibility: hidden;
+    }
+   }
+}
+
