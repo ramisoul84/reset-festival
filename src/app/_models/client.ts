@@ -4,3 +4,10 @@ export interface Client {
     email: string;  
     CreatedAt?: Date; 
   }
+
+
+  export interface DJ {
+    name: string;
+    info: string;
+    expanded?: boolean; 
+  }

@@ -1,16 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { AnimationOptions, LottieComponent } from 'ngx-lottie';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule,RouterLink],
+  imports: [CommonModule,RouterLink,LottieComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   headerColor: string = '#e63704';
   isMenuOpened:boolean = false;
+    resetLoopOptions: AnimationOptions = {
+      path: 'animations/reset-loop.json',
+      loop:true,
+    };
 
   toggleMenu(){
     this.isMenuOpened = !this.isMenuOpened;

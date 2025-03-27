@@ -12,17 +12,24 @@
             <img src="images/music.png" alt="Circular Image" class="image" >
             <p class="text" >
                 By day, let the ambient waves and local sounds invite you to explore Djerba’s vibrant culture. By night, lose yourself in the energy of underground icons and visionary artists, each performance a celebration of creativity and connection.<br/><br/>It’s an invitation to breathe with the island, to feel its pulse, and to let the music guide your journey.            </p>
-        </div>
-        <div class="line-up" data-aos="fade-up">
-            <div class="lineup-head">
+        </div> 
+        <div class="line-up" >
+            <div class="lineup-head" data-aos="fade-up">
                 <img src="images/decors/lineup.svg" alt="decoration" class="decor1"  >
                 <p class="lineup-text">LINE UP</p>
                 <img src="images/decors/lineup.svg" alt="decoration" class="decor2">
             </div>
-            <p class="djs text" >
-                Frankey & Sandrino· Luca Olivotto· Eva Crystaltips· Quadrakey· Nephews· Siggatunez· Sarah Wild· Carmen Electro· Sam Shure· Skatman· Glia· BRTINZZ· Gil bert· Blackbox· Bianca Banks· Tofu und Acid· JSAVANT· Polytox· Illinios· Sarica· Leandro· Genji Yoshiba· Zare· Slevin Flakes· Love Operator· Toast Hawaii· Gonzalo Lavin· Zuleta M· Dash· Besch· Hanafia· Luke Lash· A FRIEND· Rio· Alex Grebe· DJ Sunburn· Dolo Desir· Mono Rome· Lukas & Lisa· Yassine Karoui· & Selim X Noor Arjoun<br/><br/>
-                <span class="more"> …and more to be announced soon.</span>
-            </p>
+            <div class="djs text">
+                <div class="dj" *ngFor="let dj of djs" (click)="toggleDj(dj)" data-aos="fade-up">
+                    <div class="dj-name">
+                        <p>{{dj.name}}</p>
+                        <p>{{dj.expanded ? '−' : '+'}}</p>
+                    </div>
+                    <div class="dj-info text" [class.expanded]="dj.expanded">
+                       {{dj.info}}
+                    </div>       
+                </div>
+            </div>
         </div>
         <div class="partners">
             <p class="title" data-aos="fade-up">OUR PARTNERS</p>

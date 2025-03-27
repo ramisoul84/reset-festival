@@ -23,6 +23,10 @@
     </div>
     
     <div class="nav" [ngClass]="{'open':isMenuOpened}" [style.background]="headerColor">
+      <ng-lottie
+      class="reset"
+      [options]="resetLoopOptions"
+      />
         <p class="item" routerLink="/">INTRO</p>
         <p class="item" (click)="scrollToPage('music')">MUSIC</p>
         <p class="item" (click)="scrollToPage('experience')">EXPERIENCE</p>

@@ -26,6 +26,37 @@
                 margin-bottom: 32px;
             }
         }
+        .lineup-wrapper{
+            .lineup-title{
+                justify-items: center;
+                .lineup-title-decor1{
+                    width: 200px;
+                    -webkit-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                            transform: rotate(180deg);
+                }
+                .lineup-title-text{
+                    font-size: 50px;
+                    font-weight:700;
+                    margin: 4px 0;
+                }
+                .lineup-title-decor2{
+                    width: 200px;
+                }
+            }
+            .lineup-title.sticky-fixed {
+                position: fixed;
+                width: 100%;
+                top:0;
+                left: 50%;
+                transform: translate(-50%);
+                background-color: rgba($color: #940f0f, $alpha: 0.6);
+            }
+            .lineup-members {
+                   /* Normal styling for members */
+            margin:100px 0;
+            }
+        }
         .line-up{
             display: -webkit-box;
             display: -ms-flexbox;
@@ -33,6 +64,7 @@
             -webkit-box-pack: justify;
                 -ms-flex-pack: justify;
                     justify-content: space-between;
+            
             .lineup-head{
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -45,11 +77,13 @@
                     -ms-flex-align: center;
                         align-items: center;
                 width: 40%;
+                
                 .lineup-text{
                     font-size: 18px;
                     font-weight:700;
                     margin: 4px 0;
-                  
+                    position: sticky;
+                    top: 0;
                 }
                 .decor1{
                     width: 70px;
@@ -66,6 +100,26 @@
                 text-transform: uppercase;
                 width: 50vw;
                 line-height: 1.2rem;
+                .dj{
+                    .dj-name{
+                        display: flex;
+                        justify-content: space-between;
+                        cursor: pointer;
+                        border-bottom: 2px solid white;
+                  
+                    }
+                    .dj-info{
+                        overflow: hidden;
+                        transition: height 1s ease, opacity 0.6s ease;
+                        height: 0;
+                        opacity: 0;
+                    }
+                    .dj-info.expanded {
+                        height: 100px; /* Adjust based on your content */
+                        opacity: 1;
+                      }
+                }
+                
             }
         }
         .partners{
@@ -291,3 +345,5 @@
     
     }
 }
+
+
