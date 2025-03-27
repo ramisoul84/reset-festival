@@ -12,17 +12,5 @@ import { Swiper } from 'swiper/types';
 })
 export class SliderComponent {
   @Input() images: string[] = [];
-
-
-  ngAfterViewInit() {
-    const swiper:any = document.querySelector('.swiper-container');
-
-    swiper.on('slideChangeTransitionEnd', () => {
-      if (swiper.isEnd) {
-        // Force update pagination when reaching the end
-        swiper.pagination.update();
-        swiper.pagination.render();
-      }
-    });
-  }
+  @Input() slider: boolean = false;
 }
