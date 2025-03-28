@@ -16,9 +16,9 @@ export class MusicComponent {
 
 
   djs: DJ[] = [
-    {name:"Frankey & Sandrino",info:"German DJ....   House music specialist",expanded:false},
+    {name:"Frankey & Sandrino",info:"The music at RE:SET is a journey – one that mirrors the island’s energy, from the sun-soaked afternoons to the starry, rhythmic nights. Our soundscape weaves together groovy house beats, deep, hypnotic techno, and soulful minimal rhythms, all designed to carry you deeper into the moment",expanded:false},
     {name:"Luca Olivotto",info:"German DJ....   House music specialist",expanded:false},
-    {name:"Eva Crystaltips",info:"",expanded:false},
+    {name:"Eva Crystaltips",info:"The music at RE:SET is a journey – one that mirrors the island’s energy, from the sun-soaked afternoons to the starry, rhythmic nights. Our soundscape weaves together groovy house beats, deep, hypnotic techno, and soulful minimal rhythms, all designed to carry you deeper into the moment",expanded:false},
     {name:"Quadrakey",info:"",expanded:false},
     {name:"Nephews",info:"German DJ....   House music specialist",expanded:false},
     {name:"Siggatunez",info:"",expanded:false},
@@ -63,7 +63,11 @@ export class MusicComponent {
 
   toggleDj(clickedDj: DJ) {
 
-  this.djs.forEach(dj => dj.expanded = false);
+  this.djs.forEach(dj => {
+    if (dj.expanded) {
+      dj.expanded = false
+    }
+    });
     
     // Toggle the clicked DJ
     clickedDj.expanded = !clickedDj.expanded;
